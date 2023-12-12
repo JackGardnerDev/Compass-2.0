@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Compass Home Page">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Jack Gardner">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compass</title>
+    <link rel="icon" type="image/x-icon" href="assets/imgs/favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/lighting.js" defer></script>
+    <script src="assets/js/components.js" defer></script>
+    <script src="assets/js/accent.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/39ebcef0ea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Navigation -->
+    <div class="navigation">
+        <div class="sidenav">
+            <a href="#" id="compass-button" class="btn btn-secondary target"><i class="fa-regular fa-compass fa-2xl" style="color: var(--clr-accent);"></i></a>
+            <a href="#" id="clock-button" class="btn btn-secondary target"><i class="fa-regular fa-clock fa-2xl" style="color: var(--clr-accent);"></i></a>
+            <a href="#" id="calender-button" class="btn btn-secondary target"><i class="fa-solid fa-calendar-days fa-2xl" style="color: var(--clr-accent);"></i></a>
+            <a href="#" id="todo-button" class="btn btn-secondary target"><i class="fa-solid fa-list fa-2xl" style="color: var(--clr-accent);"></i></a> 
+            <a href="#" id="weather-button" class="btn btn-secondary target"><i class="fa-solid fa-cloud fa-2xl" style="color: var(--clr-accent);"></i></a>
+            <a href="#" id="browse-button" class="btn btn-secondary target"><i class="fa-brands fa-chrome fa-2xl" style="color: var(--clr-accent);"></i></a>
+            <a href="#" id="options-button" class="btn btn-secondary target"><i class="fa-solid fa-gear fa-2xl" style="color: var(--clr-accent);"></i></a>
+            <a href="#" id="lighting-button" class="btn btn-secondary target"><i class="fa-regular fa-lightbulb fa-2xl" style="color: var(--clr-accent);"></i></a>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+
+        <!-- Clock -->
+        <div class="clock-content" hidden>
+            <h3>Project 1</h3>
+            <p class="subtitle">P1</p>  
+            <p class="accent">P1</p>
+        </div>
+
+        <!-- Calender -->
+        <div class="calender-content" hidden>
+            <h3>Project 2</h3>
+            <p class="subtitle">P2</p>  
+            <p class="accent">P2</p>
+        </div>
+
+        <!-- To Do -->
+        <div class="todo-content" hidden>
+            <h3>Project 3</h3>
+            <p class="subtitle">P3</p>  
+            <p class="accent">P3</p>
+        </div>
+
+        <!-- Weather -->
+        <div class="weather-content" hidden>
+            <h3>Project 4</h3>
+            <p class="subtitle">P4</p>  
+            <p class="accent">P4</p>
+        </div>
+
+        <!-- Browse -->
+        <div class="browse-content" hidden>
+            <h3>Project 5</h3>
+            <p class="subtitle">P5</p>  
+            <p class="accent">P5</p>
+        </div>
+
+        <!-- Options -->
+        <div class="options-content" hidden>
+            <label for="colorPicker">Choose Accent Color:</label>
+            <input type="color" id="colorPicker" data-color-var="--clr-accent">
+            <p class="accent">Here is your current accent colour.</p>
+        </div>
+
+        <!-- Lighting Theme -->
+        <div class="lighting-content" hidden>
+            <button id="dark-mode-toggle" class="dark-mode-toggle">
+                <i onclick="changeIcon()" id="dark-mode-icon" class="fa-regular fa-sun fa-2xl" style="color: var(--clr-accent);"></i>
+            </button>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
