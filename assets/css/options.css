@@ -1,0 +1,25 @@
+.containerOptions {
+    position: absolute;
+    bottom: 70px;
+    left: 88.5px;
+    width: auto;
+}
+
+.containerOptions input[type="color"] {
+    width: 32.5px;
+    height: 32.5px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    border: 2px solid var(--background);
+    -webkit-appearance: none;
+}
+
+.containerOptions input[type="color"]:hover {
+    border: 2px solid var(--foreground);
+}
+
+.containerOptions input[type="color"]::-webkit-color-swatch {
+	border: none;
+}

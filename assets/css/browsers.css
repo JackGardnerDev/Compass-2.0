@@ -1,0 +1,13 @@
+.containerBrowsers {
+    position: absolute;
+    bottom: 105px;
+    left: 90px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.containerBrowsers > a {
+    margin-bottom: 25px;
+}

@@ -1,0 +1,45 @@
+/* Navigation */
+
+.container {
+    display: flex;
+}
+  
+.navigation {
+    position: fixed;
+    height: 100vh;
+    width: 75px;
+    color: var(--foreground);
+    overflow-y: auto;
+    border-right: 1px solid var(--clr-accent);
+}
+  
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--clr-accent);
+}
+  
+.fa-compass:hover,
+.fa-clock:hover,
+.fa-calendar-days:hover,
+.fa-list:hover,
+.fa-cloud:hover,
+.fa-chrome:hover,
+.fa-gear:hover,
+.fa-lightbulb:hover,
+.fa-brave:hover,
+.fa-google:hover,
+.fa-feather:hover {
+    color: var(--foreground) !important;
+}
+  
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 75px;
+}

@@ -1,0 +1,33 @@
+/* To Do */
+
+.containerToDo {
+    position: absolute;
+    bottom: 15px;
+    left: 80px;
+    width: auto;
+}
+
+/* Scrollbar */
+  
+/* .scrollable {
+    padding: 0px 0px;
+    margin: 75px 0px;
+    height: 1000px;
+    overflow-y: auto;
+} */
+  
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: var(--background); 
+}
+   
+::-webkit-scrollbar-thumb {
+    background: var(--foreground); 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: var(--clr-accent);  
+}

@@ -10,9 +10,16 @@
     <title>Compass</title>
     <link rel="icon" type="image/x-icon" href="assets/imgs/favicon.png">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navigation.css">
+    <link rel="stylesheet" href="assets/css/clock.css">
+    <link rel="stylesheet" href="assets/css/todo.css">
+    <link rel="stylesheet" href="assets/css/browsers.css">
+    <link rel="stylesheet" href="assets/css/options.css">
+    <link rel="stylesheet" href="assets/css/lighting.css">
     <script src="assets/js/lighting.js" defer></script>
     <script src="assets/js/components.js" defer></script>
     <script src="assets/js/accent.js" defer></script>
+    <script src="assets/js/clock.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/39ebcef0ea.js" crossorigin="anonymous"></script>
 </head>
@@ -39,9 +46,26 @@
 
         <!-- Clock -->
         <div class="clock-content" hidden>
-            <h3>Project 1</h3>
-            <p class="subtitle">P1</p>  
-            <p class="accent">P1</p>
+            <!-- Digital Clock -->
+            <div class="containerClockD">
+                <div class="time">
+                    <span id="clock" class="accent"></span>
+                </div>
+            </div>
+            <!-- Analog Clock -->
+            <div class="containerClockA">
+                <div class="clock">
+                <div class="hour">
+                    <div class="hr" id="hr"></div>
+                </div>
+                <div class="min">
+                    <div class="mn" id="mn"></div>
+                </div>
+                <div class="sec">
+                    <div class="sc" id="sc"></div>
+                </div>
+                </div>
+            </div>
         </div>
 
         <!-- Calender -->
@@ -53,9 +77,12 @@
 
         <!-- To Do -->
         <div class="todo-content" hidden>
-            <h3>Project 3</h3>
-            <p class="subtitle">P3</p>  
-            <p class="accent">P3</p>
+            <div class="containerToDo">
+                To Do
+                <div class="scrollable">
+                    Test
+                </div>
+            </div>
         </div>
 
         <!-- Weather -->
@@ -67,23 +94,27 @@
 
         <!-- Browse -->
         <div class="browse-content" hidden>
-            <h3>Project 5</h3>
-            <p class="subtitle">P5</p>  
-            <p class="accent">P5</p>
+            <div class="containerBrowsers">
+                <a href="https://search.brave.com/"><i class="fa-brands fa-brave fa-2xl" style="color: var(--clr-accent);"></i></a>
+                <a href="https://google.com/search"><i class="fa-brands fa-google fa-2xl" style="color: var(--clr-accent);"></i></a>
+                <a href="https://duckduckgo.com/"><i class="fa-solid fa-feather fa-2xl" style="color: var(--clr-accent);"></i></a>
+            </div>
         </div>
 
         <!-- Options -->
         <div class="options-content" hidden>
-            <label for="colorPicker">Choose Accent Color:</label>
-            <input type="color" id="colorPicker" data-color-var="--clr-accent">
-            <p class="accent">Here is your current accent colour.</p>
+            <div class="containerOptions">
+                <input type="color" id="colorPicker" data-color-var="--clr-accent">
+            </div>
         </div>
 
         <!-- Lighting Theme -->
         <div class="lighting-content" hidden>
-            <button id="dark-mode-toggle" class="dark-mode-toggle">
-                <i onclick="changeIcon()" id="dark-mode-icon" class="fa-regular fa-sun fa-2xl" style="color: var(--clr-accent);"></i>
-            </button>
+            <div class="containerLighting">
+                <button id="dark-mode-toggle" class="dark-mode-toggle">
+                    <i onclick="changeIcon()" id="dark-mode-icon" class="fa-regular fa-sun fa-2xl" style="color: var(--clr-accent);"></i>
+                </button>
+            </div>
         </div>
 
     </div>
